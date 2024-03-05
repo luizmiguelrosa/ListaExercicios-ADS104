@@ -35,29 +35,27 @@ int main()
     
     printf("\n");
     
-    printf("Soma das linhas pares: ");
+    
     for (y = 0; y < 4; y++) {
         if (y % 2 == 0){
             for (x = 0; x < 4; x++){
                 soma_linhas_pares += matriz[y][x];
             }
         }
-    }
-    printf("%d\n", soma_linhas_pares);
-    media = soma_linhas_pares / 4;
-    printf("Média das linhas pares: %.1f", media);
-    
-    printf("\n");
-    
-    printf("Soma das linhas impares: ");
-    for (y = 0; y < 4; y++) {
-        if (! y % 2 == 0){
+        else 
             for (x = 0; x < 4; x++){
                 soma_linhas_impares += matriz[y][x];
             }
         }
     }
-    printf("%d", soma_linhas_pares);
+    printf("Soma das linhas pares: ");
+    printf("%d\n", soma_linhas_pares);
 
+    printf("Soma das linhas impares: ");
+    printf("%d\n", soma_linhas_impares);
+
+    media = soma_linhas_pares / 4;
+    printf("Média das linhas pares: %.1f", media);
+    
     return 0;
 }
